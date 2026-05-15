@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -195,16 +196,30 @@
   .down { background: #eaf5ea; color: #27ae60; }
   .flat { background: #f0f0f0; color: #666; }
 
-  /* ── Zero note ── */
-  .zero-note {
-    background: #F5F5F5;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 12px 14px;
-    font-size: 0.80rem;
-    color: var(--muted);
+  /* ── Data warning banner ── */
+  .data-warning {
+    display: none;
+    background: #FFFBEA;
+    border: 1.5px solid #E6C84A;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.5;
+  }
+  .data-warning.visible { display: block; }
+  .data-warning .dw-head {
+    font-size: 0.84rem;
+    font-weight: bold;
+    color: #7A5C00;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .data-warning .dw-body {
+    font-size: 0.80rem;
+    color: #5A4500;
+    line-height: 1.65;
   }
 
   /* ── Footer ── */
@@ -261,6 +276,12 @@
   </div>
 
   <div class="same-error" id="sameError">Please select two different counties.</div>
+
+  <div class="data-warning" id="dataWarning">
+    <div class="dw-head">⚠ Data limitation for this county pair</div>
+    <div class="dw-body" id="dataWarningBody"></div>
+  </div>
+
   <div id="content"></div>
 
   <div class="footer">
@@ -367,6 +388,7 @@ function render() {
 
   if (fA === fB) {
     err.style.display = "block";
+    document.getElementById("dataWarning").classList.remove("visible");
     document.getElementById("content").innerHTML = "";
     return;
   }
@@ -387,6 +409,16 @@ function render() {
     (gorgeWA.includes(fA) && gorgeOR.includes(fB)) ||
     (gorgeOR.includes(fA) && gorgeWA.includes(fB))
   );
+
+  // Show / hide warning banner
+  const warningEl = document.getElementById("dataWarning");
+  const warningBody = document.getElementById("dataWarningBody");
+  if (isCrossState) {
+    warningBody.innerHTML = `Direct commute flows between Oregon Gorge counties (Hood River, Wasco) and Washington Gorge counties (Klickitat, Skamania) fall below the federal data disclosure threshold in LODES and are recorded as zero throughout this tool. This is a known limitation of the dataset — it does not mean cross-river commuting doesn't happen, only that these flows are too small for the Census Bureau to publish at this level of detail without risking individual identification. For cross-river flow estimates, see ACS journey-to-work tables or Oregon/Washington DOT commute surveys.`;
+    warningEl.classList.add("visible");
+  } else {
+    warningEl.classList.remove("visible");
+  }
 
   // Show Skamania fiscal callout if Skamania is selected
   const showFiscal = (fA === "53059" || fB === "53059");
@@ -422,14 +454,6 @@ function render() {
         ${changeBadge(ba[2012], ba[2022])}
       </div>
     </div>
-
-    ${isCrossState ? `
-    <div class="zero-note">
-      <strong>Note on cross-state flows:</strong> Direct commute flows between Oregon and Washington
-      Gorge counties (Hood River/Wasco ↔ Klickitat/Skamania) fall below the LODES data disclosure
-      threshold and are recorded as zero. This is a known limitation of the dataset for small
-      cross-state flows, not an indication that no such commuting occurs.
-    </div>` : ""}
 
     ${showFiscal && !isCrossState ? `
     <div class="fiscal-box">
