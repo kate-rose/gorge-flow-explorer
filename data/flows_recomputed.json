@@ -1,0 +1,1105 @@
+{
+ "counties": [
+  {
+   "fips": "41027",
+   "name": "Hood River",
+   "state": "OR"
+  },
+  {
+   "fips": "41065",
+   "name": "Wasco",
+   "state": "OR"
+  },
+  {
+   "fips": "41051",
+   "name": "Multnomah",
+   "state": "OR"
+  },
+  {
+   "fips": "53059",
+   "name": "Skamania",
+   "state": "WA"
+  },
+  {
+   "fips": "53039",
+   "name": "Klickitat",
+   "state": "WA"
+  },
+  {
+   "fips": "53011",
+   "name": "Clark",
+   "state": "WA"
+  }
+ ],
+ "meta": {
+  "method": "main + aux for OR and WA; county = first five digits of w_geocode and h_geocode",
+  "product": "LODES version 8, origin-destination, job type JT00 (all jobs), column S000 (total jobs)",
+  "publisher": "U.S. Census Bureau, Longitudinal Employer-Household Dynamics (LEHD)",
+  "unit": "jobs (not workers)",
+  "url": "https://lehd.ces.census.gov/data/lodes/LODES8/"
+ },
+ "years": {
+  "2012": {
+   "files": {
+    "or_aux": {
+     "bytes": 742328,
+     "createdate": [
+      "20230321"
+     ],
+     "file": "or_od_aux_JT00_2012.csv.gz",
+     "jobs_S000": 109891,
+     "rows": 106349,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "432f794a3b2aae9ad0a4353780002bf4cde9b5d9d9ce5bfe85e7e782882b6667"
+    },
+    "or_main": {
+     "bytes": 8173082,
+     "createdate": [
+      "20230321"
+     ],
+     "file": "or_od_main_JT00_2012.csv.gz",
+     "jobs_S000": 1515702,
+     "rows": 1382835,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "d865fd1aa55cd91e8348bfa8d0cb5e0cf3a1ed8afdec9a9e4159e03403665cb9"
+    },
+    "wa_aux": {
+     "bytes": 568786,
+     "createdate": [
+      "20230321"
+     ],
+     "file": "wa_od_aux_JT00_2012.csv.gz",
+     "jobs_S000": 76570,
+     "rows": 74514,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "c1bc27daee06bef9598fd4f1c51878214646d98ddea74896092ce57949e57f93"
+    },
+    "wa_main": {
+     "bytes": 14077526,
+     "createdate": [
+      "20230321"
+     ],
+     "file": "wa_od_main_JT00_2012.csv.gz",
+     "jobs_S000": 2734050,
+     "rows": 2380603,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "b41cdd99c1d17fb9620c7037fc53785fa3bbafdd44a87efc0ea7ca867d829cb5"
+    }
+   },
+   "flows": {
+    "41027": {
+     "41027": {
+      "aux": 0,
+      "jobs": 6134,
+      "main": 6134
+     },
+     "41051": {
+      "aux": 0,
+      "jobs": 764,
+      "main": 764
+     },
+     "41065": {
+      "aux": 0,
+      "jobs": 737,
+      "main": 737
+     },
+     "53011": {
+      "aux": 55,
+      "jobs": 55,
+      "main": 0
+     },
+     "53039": {
+      "aux": 388,
+      "jobs": 388,
+      "main": 0
+     },
+     "53059": {
+      "aux": 73,
+      "jobs": 73,
+      "main": 0
+     }
+    },
+    "41051": {
+     "41027": {
+      "aux": 0,
+      "jobs": 380,
+      "main": 380
+     },
+     "41051": {
+      "aux": 0,
+      "jobs": 218960,
+      "main": 218960
+     },
+     "41065": {
+      "aux": 0,
+      "jobs": 282,
+      "main": 282
+     },
+     "53011": {
+      "aux": 8814,
+      "jobs": 8814,
+      "main": 0
+     },
+     "53039": {
+      "aux": 103,
+      "jobs": 103,
+      "main": 0
+     },
+     "53059": {
+      "aux": 55,
+      "jobs": 55,
+      "main": 0
+     }
+    },
+    "41065": {
+     "41027": {
+      "aux": 0,
+      "jobs": 1080,
+      "main": 1080
+     },
+     "41051": {
+      "aux": 0,
+      "jobs": 1109,
+      "main": 1109
+     },
+     "41065": {
+      "aux": 0,
+      "jobs": 5269,
+      "main": 5269
+     },
+     "53011": {
+      "aux": 64,
+      "jobs": 64,
+      "main": 0
+     },
+     "53039": {
+      "aux": 294,
+      "jobs": 294,
+      "main": 0
+     },
+     "53059": {
+      "aux": 23,
+      "jobs": 23,
+      "main": 0
+     }
+    },
+    "53011": {
+     "41027": {
+      "aux": 170,
+      "jobs": 170,
+      "main": 0
+     },
+     "41051": {
+      "aux": 44052,
+      "jobs": 44052,
+      "main": 0
+     },
+     "41065": {
+      "aux": 123,
+      "jobs": 123,
+      "main": 0
+     },
+     "53011": {
+      "aux": 0,
+      "jobs": 90008,
+      "main": 90008
+     },
+     "53039": {
+      "aux": 0,
+      "jobs": 294,
+      "main": 294
+     },
+     "53059": {
+      "aux": 0,
+      "jobs": 273,
+      "main": 273
+     }
+    },
+    "53039": {
+     "41027": {
+      "aux": 719,
+      "jobs": 719,
+      "main": 0
+     },
+     "41051": {
+      "aux": 514,
+      "jobs": 514,
+      "main": 0
+     },
+     "41065": {
+      "aux": 478,
+      "jobs": 478,
+      "main": 0
+     },
+     "53011": {
+      "aux": 0,
+      "jobs": 694,
+      "main": 694
+     },
+     "53039": {
+      "aux": 0,
+      "jobs": 3194,
+      "main": 3194
+     },
+     "53059": {
+      "aux": 0,
+      "jobs": 352,
+      "main": 352
+     }
+    },
+    "53059": {
+     "41027": {
+      "aux": 321,
+      "jobs": 321,
+      "main": 0
+     },
+     "41051": {
+      "aux": 681,
+      "jobs": 681,
+      "main": 0
+     },
+     "41065": {
+      "aux": 86,
+      "jobs": 86,
+      "main": 0
+     },
+     "53011": {
+      "aux": 0,
+      "jobs": 1030,
+      "main": 1030
+     },
+     "53039": {
+      "aux": 0,
+      "jobs": 424,
+      "main": 424
+     },
+     "53059": {
+      "aux": 0,
+      "jobs": 1101,
+      "main": 1101
+     }
+    }
+   },
+   "residence": {
+    "41027": {
+     "in_home_county": 6134,
+     "in_home_state": 9564,
+     "in_other_state": 846,
+     "jobs_at_or_wa_workplaces": 10410,
+     "name": "Hood River",
+     "outside_home_county": 4276,
+     "pct_outside_home_county": 41.1
+    },
+    "41051": {
+     "in_home_county": 218960,
+     "in_home_state": 316286,
+     "in_other_state": 12632,
+     "jobs_at_or_wa_workplaces": 328918,
+     "name": "Multnomah",
+     "outside_home_county": 109958,
+     "pct_outside_home_county": 33.4
+    },
+    "41065": {
+     "in_home_county": 5269,
+     "in_home_state": 10643,
+     "in_other_state": 825,
+     "jobs_at_or_wa_workplaces": 11468,
+     "name": "Wasco",
+     "outside_home_county": 6199,
+     "pct_outside_home_county": 54.1
+    },
+    "53011": {
+     "in_home_county": 90008,
+     "in_home_state": 117224,
+     "in_other_state": 63255,
+     "jobs_at_or_wa_workplaces": 180479,
+     "name": "Clark",
+     "outside_home_county": 90471,
+     "pct_outside_home_county": 50.1
+    },
+    "53039": {
+     "in_home_county": 3194,
+     "in_home_state": 5764,
+     "in_other_state": 2392,
+     "jobs_at_or_wa_workplaces": 8156,
+     "name": "Klickitat",
+     "outside_home_county": 4962,
+     "pct_outside_home_county": 60.8
+    },
+    "53059": {
+     "in_home_county": 1101,
+     "in_home_state": 3626,
+     "in_other_state": 1784,
+     "jobs_at_or_wa_workplaces": 5410,
+     "name": "Skamania",
+     "outside_home_county": 4309,
+     "pct_outside_home_county": 79.6
+    }
+   },
+   "workplace": {
+    "41027": {
+     "aux": 1936,
+     "held_by_other_five_county_residents": 2670,
+     "held_by_residents_elsewhere": 2399,
+     "held_by_same_county_residents": 6134,
+     "jobs": 11203,
+     "main": 9267,
+     "name": "Hood River"
+    },
+    "41051": {
+     "aux": 53414,
+     "held_by_other_five_county_residents": 47120,
+     "held_by_residents_elsewhere": 185365,
+     "held_by_same_county_residents": 218960,
+     "jobs": 451445,
+     "main": 398031,
+     "name": "Multnomah"
+    },
+    "41065": {
+     "aux": 1221,
+     "held_by_other_five_county_residents": 1706,
+     "held_by_residents_elsewhere": 2268,
+     "held_by_same_county_residents": 5269,
+     "jobs": 9243,
+     "main": 8022,
+     "name": "Wasco"
+    },
+    "53011": {
+     "aux": 16473,
+     "held_by_other_five_county_residents": 10657,
+     "held_by_residents_elsewhere": 25715,
+     "held_by_same_county_residents": 90008,
+     "jobs": 126380,
+     "main": 109907,
+     "name": "Clark"
+    },
+    "53039": {
+     "aux": 1135,
+     "held_by_other_five_county_residents": 1503,
+     "held_by_residents_elsewhere": 1667,
+     "held_by_same_county_residents": 3194,
+     "jobs": 6364,
+     "main": 5229,
+     "name": "Klickitat"
+    },
+    "53059": {
+     "aux": 290,
+     "held_by_other_five_county_residents": 776,
+     "held_by_residents_elsewhere": 387,
+     "held_by_same_county_residents": 1101,
+     "jobs": 2264,
+     "main": 1974,
+     "name": "Skamania"
+    }
+   }
+  },
+  "2019": {
+   "files": {
+    "or_aux": {
+     "bytes": 939241,
+     "createdate": [
+      "20230321"
+     ],
+     "file": "or_od_aux_JT00_2019.csv.gz",
+     "jobs_S000": 134304,
+     "rows": 130690,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "740ec142f509c449e5f0d07f64a36960ccf1917a9517a737965e5121f18cc325"
+    },
+    "or_main": {
+     "bytes": 9688014,
+     "createdate": [
+      "20230321"
+     ],
+     "file": "or_od_main_JT00_2019.csv.gz",
+     "jobs_S000": 1808573,
+     "rows": 1641252,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "ec06358531001f3b28ca4bdf43aee205767d5e98f0b21ef21797f93a5da5e172"
+    },
+    "wa_aux": {
+     "bytes": 813464,
+     "createdate": [
+      "20230321"
+     ],
+     "file": "wa_od_aux_JT00_2019.csv.gz",
+     "jobs_S000": 105414,
+     "rows": 103021,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "97f180c9da0bcac15c49baefe21df56046e4179265e6f14cb1bb76336afceff3"
+    },
+    "wa_main": {
+     "bytes": 16450233,
+     "createdate": [
+      "20230321"
+     ],
+     "file": "wa_od_main_JT00_2019.csv.gz",
+     "jobs_S000": 3177560,
+     "rows": 2801847,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "a5bbc04a735f50871856edb2e9fb020690f23c410d588bd157d9405415dddbdb"
+    }
+   },
+   "flows": {
+    "41027": {
+     "41027": {
+      "aux": 0,
+      "jobs": 7654,
+      "main": 7654
+     },
+     "41051": {
+      "aux": 0,
+      "jobs": 768,
+      "main": 768
+     },
+     "41065": {
+      "aux": 0,
+      "jobs": 734,
+      "main": 734
+     },
+     "53011": {
+      "aux": 56,
+      "jobs": 56,
+      "main": 0
+     },
+     "53039": {
+      "aux": 570,
+      "jobs": 570,
+      "main": 0
+     },
+     "53059": {
+      "aux": 83,
+      "jobs": 83,
+      "main": 0
+     }
+    },
+    "41051": {
+     "41027": {
+      "aux": 0,
+      "jobs": 758,
+      "main": 758
+     },
+     "41051": {
+      "aux": 0,
+      "jobs": 263425,
+      "main": 263425
+     },
+     "41065": {
+      "aux": 0,
+      "jobs": 285,
+      "main": 285
+     },
+     "53011": {
+      "aux": 11407,
+      "jobs": 11407,
+      "main": 0
+     },
+     "53039": {
+      "aux": 90,
+      "jobs": 90,
+      "main": 0
+     },
+     "53059": {
+      "aux": 64,
+      "jobs": 64,
+      "main": 0
+     }
+    },
+    "41065": {
+     "41027": {
+      "aux": 0,
+      "jobs": 1422,
+      "main": 1422
+     },
+     "41051": {
+      "aux": 0,
+      "jobs": 966,
+      "main": 966
+     },
+     "41065": {
+      "aux": 0,
+      "jobs": 6003,
+      "main": 6003
+     },
+     "53011": {
+      "aux": 69,
+      "jobs": 69,
+      "main": 0
+     },
+     "53039": {
+      "aux": 429,
+      "jobs": 429,
+      "main": 0
+     },
+     "53059": {
+      "aux": 10,
+      "jobs": 10,
+      "main": 0
+     }
+    },
+    "53011": {
+     "41027": {
+      "aux": 229,
+      "jobs": 229,
+      "main": 0
+     },
+     "41051": {
+      "aux": 49818,
+      "jobs": 49818,
+      "main": 0
+     },
+     "41065": {
+      "aux": 110,
+      "jobs": 110,
+      "main": 0
+     },
+     "53011": {
+      "aux": 0,
+      "jobs": 114682,
+      "main": 114682
+     },
+     "53039": {
+      "aux": 0,
+      "jobs": 426,
+      "main": 426
+     },
+     "53059": {
+      "aux": 0,
+      "jobs": 298,
+      "main": 298
+     }
+    },
+    "53039": {
+     "41027": {
+      "aux": 769,
+      "jobs": 769,
+      "main": 0
+     },
+     "41051": {
+      "aux": 406,
+      "jobs": 406,
+      "main": 0
+     },
+     "41065": {
+      "aux": 553,
+      "jobs": 553,
+      "main": 0
+     },
+     "53011": {
+      "aux": 0,
+      "jobs": 232,
+      "main": 232
+     },
+     "53039": {
+      "aux": 0,
+      "jobs": 3420,
+      "main": 3420
+     },
+     "53059": {
+      "aux": 0,
+      "jobs": 97,
+      "main": 97
+     }
+    },
+    "53059": {
+     "41027": {
+      "aux": 383,
+      "jobs": 383,
+      "main": 0
+     },
+     "41051": {
+      "aux": 662,
+      "jobs": 662,
+      "main": 0
+     },
+     "41065": {
+      "aux": 60,
+      "jobs": 60,
+      "main": 0
+     },
+     "53011": {
+      "aux": 0,
+      "jobs": 954,
+      "main": 954
+     },
+     "53039": {
+      "aux": 0,
+      "jobs": 386,
+      "main": 386
+     },
+     "53059": {
+      "aux": 0,
+      "jobs": 1253,
+      "main": 1253
+     }
+    }
+   },
+   "residence": {
+    "41027": {
+     "in_home_county": 7654,
+     "in_home_state": 10894,
+     "in_other_state": 971,
+     "jobs_at_or_wa_workplaces": 11865,
+     "name": "Hood River",
+     "outside_home_county": 4211,
+     "pct_outside_home_county": 35.5
+    },
+    "41051": {
+     "in_home_county": 263425,
+     "in_home_state": 380254,
+     "in_other_state": 16839,
+     "jobs_at_or_wa_workplaces": 397093,
+     "name": "Multnomah",
+     "outside_home_county": 133668,
+     "pct_outside_home_county": 33.7
+    },
+    "41065": {
+     "in_home_county": 6003,
+     "in_home_state": 11125,
+     "in_other_state": 1006,
+     "jobs_at_or_wa_workplaces": 12131,
+     "name": "Wasco",
+     "outside_home_county": 6128,
+     "pct_outside_home_county": 50.5
+    },
+    "53011": {
+     "in_home_county": 114682,
+     "in_home_state": 149047,
+     "in_other_state": 72701,
+     "jobs_at_or_wa_workplaces": 221748,
+     "name": "Clark",
+     "outside_home_county": 107066,
+     "pct_outside_home_county": 48.3
+    },
+    "53039": {
+     "in_home_county": 3420,
+     "in_home_state": 5202,
+     "in_other_state": 2479,
+     "jobs_at_or_wa_workplaces": 7681,
+     "name": "Klickitat",
+     "outside_home_county": 4261,
+     "pct_outside_home_county": 55.5
+    },
+    "53059": {
+     "in_home_county": 1253,
+     "in_home_state": 3709,
+     "in_other_state": 1909,
+     "jobs_at_or_wa_workplaces": 5618,
+     "name": "Skamania",
+     "outside_home_county": 4365,
+     "pct_outside_home_county": 77.7
+    }
+   },
+   "workplace": {
+    "41027": {
+     "aux": 2119,
+     "held_by_other_five_county_residents": 3561,
+     "held_by_residents_elsewhere": 2410,
+     "held_by_same_county_residents": 7654,
+     "jobs": 13625,
+     "main": 11506,
+     "name": "Hood River"
+    },
+    "41051": {
+     "aux": 63081,
+     "held_by_other_five_county_residents": 52620,
+     "held_by_residents_elsewhere": 217577,
+     "held_by_same_county_residents": 263425,
+     "jobs": 533622,
+     "main": 470541,
+     "name": "Multnomah"
+    },
+    "41065": {
+     "aux": 1280,
+     "held_by_other_five_county_residents": 1742,
+     "held_by_residents_elsewhere": 2282,
+     "held_by_same_county_residents": 6003,
+     "jobs": 10027,
+     "main": 8747,
+     "name": "Wasco"
+    },
+    "53011": {
+     "aux": 20834,
+     "held_by_other_five_county_residents": 12718,
+     "held_by_residents_elsewhere": 34990,
+     "held_by_same_county_residents": 114682,
+     "jobs": 162390,
+     "main": 141556,
+     "name": "Clark"
+    },
+    "53039": {
+     "aux": 1742,
+     "held_by_other_five_county_residents": 1901,
+     "held_by_residents_elsewhere": 1806,
+     "held_by_same_county_residents": 3420,
+     "jobs": 7127,
+     "main": 5385,
+     "name": "Klickitat"
+    },
+    "53059": {
+     "aux": 309,
+     "held_by_other_five_county_residents": 552,
+     "held_by_residents_elsewhere": 405,
+     "held_by_same_county_residents": 1253,
+     "jobs": 2210,
+     "main": 1901,
+     "name": "Skamania"
+    }
+   }
+  },
+  "2022": {
+   "files": {
+    "or_aux": {
+     "bytes": 930091,
+     "createdate": [
+      "20240920"
+     ],
+     "file": "or_od_aux_JT00_2022.csv.gz",
+     "jobs_S000": 132230,
+     "rows": 128598,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "4f5771cfefeb9634076373355728c7d45aa78d1e042668eff30440d79bbac76d"
+    },
+    "or_main": {
+     "bytes": 9683435,
+     "createdate": [
+      "20240920"
+     ],
+     "file": "or_od_main_JT00_2022.csv.gz",
+     "jobs_S000": 1798168,
+     "rows": 1644265,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "632d33220d691e6d5296677356054c205a328a371c4fa2f91aa61575b3ccb812"
+    },
+    "wa_aux": {
+     "bytes": 857737,
+     "createdate": [
+      "20240920"
+     ],
+     "file": "wa_od_aux_JT00_2022.csv.gz",
+     "jobs_S000": 112080,
+     "rows": 109725,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "7cfc213f6cca6dbab7f7d36c485641f2046931aad2c982b1c3bd6ed9ffb150bf"
+    },
+    "wa_main": {
+     "bytes": 16978734,
+     "createdate": [
+      "20240920"
+     ],
+     "file": "wa_od_main_JT00_2022.csv.gz",
+     "jobs_S000": 3322901,
+     "rows": 2905296,
+     "rows_breaking_main_aux_definition": 0,
+     "sha256": "f84c7262731c7ed186e95c60b21f6446b2e098313b7818e828ff5db316b853f4"
+    }
+   },
+   "flows": {
+    "41027": {
+     "41027": {
+      "aux": 0,
+      "jobs": 7354,
+      "main": 7354
+     },
+     "41051": {
+      "aux": 0,
+      "jobs": 929,
+      "main": 929
+     },
+     "41065": {
+      "aux": 0,
+      "jobs": 758,
+      "main": 758
+     },
+     "53011": {
+      "aux": 73,
+      "jobs": 73,
+      "main": 0
+     },
+     "53039": {
+      "aux": 428,
+      "jobs": 428,
+      "main": 0
+     },
+     "53059": {
+      "aux": 81,
+      "jobs": 81,
+      "main": 0
+     }
+    },
+    "41051": {
+     "41027": {
+      "aux": 0,
+      "jobs": 645,
+      "main": 645
+     },
+     "41051": {
+      "aux": 0,
+      "jobs": 242246,
+      "main": 242246
+     },
+     "41065": {
+      "aux": 0,
+      "jobs": 349,
+      "main": 349
+     },
+     "53011": {
+      "aux": 10946,
+      "jobs": 10946,
+      "main": 0
+     },
+     "53039": {
+      "aux": 115,
+      "jobs": 115,
+      "main": 0
+     },
+     "53059": {
+      "aux": 88,
+      "jobs": 88,
+      "main": 0
+     }
+    },
+    "41065": {
+     "41027": {
+      "aux": 0,
+      "jobs": 1430,
+      "main": 1430
+     },
+     "41051": {
+      "aux": 0,
+      "jobs": 1037,
+      "main": 1037
+     },
+     "41065": {
+      "aux": 0,
+      "jobs": 5627,
+      "main": 5627
+     },
+     "53011": {
+      "aux": 80,
+      "jobs": 80,
+      "main": 0
+     },
+     "53039": {
+      "aux": 413,
+      "jobs": 413,
+      "main": 0
+     },
+     "53059": {
+      "aux": 36,
+      "jobs": 36,
+      "main": 0
+     }
+    },
+    "53011": {
+     "41027": {
+      "aux": 245,
+      "jobs": 245,
+      "main": 0
+     },
+     "41051": {
+      "aux": 44936,
+      "jobs": 44936,
+      "main": 0
+     },
+     "41065": {
+      "aux": 107,
+      "jobs": 107,
+      "main": 0
+     },
+     "53011": {
+      "aux": 0,
+      "jobs": 120969,
+      "main": 120969
+     },
+     "53039": {
+      "aux": 0,
+      "jobs": 397,
+      "main": 397
+     },
+     "53059": {
+      "aux": 0,
+      "jobs": 328,
+      "main": 328
+     }
+    },
+    "53039": {
+     "41027": {
+      "aux": 753,
+      "jobs": 753,
+      "main": 0
+     },
+     "41051": {
+      "aux": 588,
+      "jobs": 588,
+      "main": 0
+     },
+     "41065": {
+      "aux": 507,
+      "jobs": 507,
+      "main": 0
+     },
+     "53011": {
+      "aux": 0,
+      "jobs": 365,
+      "main": 365
+     },
+     "53039": {
+      "aux": 0,
+      "jobs": 3454,
+      "main": 3454
+     },
+     "53059": {
+      "aux": 0,
+      "jobs": 101,
+      "main": 101
+     }
+    },
+    "53059": {
+     "41027": {
+      "aux": 343,
+      "jobs": 343,
+      "main": 0
+     },
+     "41051": {
+      "aux": 660,
+      "jobs": 660,
+      "main": 0
+     },
+     "41065": {
+      "aux": 60,
+      "jobs": 60,
+      "main": 0
+     },
+     "53011": {
+      "aux": 0,
+      "jobs": 1068,
+      "main": 1068
+     },
+     "53039": {
+      "aux": 0,
+      "jobs": 332,
+      "main": 332
+     },
+     "53059": {
+      "aux": 0,
+      "jobs": 1106,
+      "main": 1106
+     }
+    }
+   },
+   "residence": {
+    "41027": {
+     "in_home_county": 7354,
+     "in_home_state": 11091,
+     "in_other_state": 932,
+     "jobs_at_or_wa_workplaces": 12023,
+     "name": "Hood River",
+     "outside_home_county": 4669,
+     "pct_outside_home_county": 38.8
+    },
+    "41051": {
+     "in_home_county": 242246,
+     "in_home_state": 363970,
+     "in_other_state": 16570,
+     "jobs_at_or_wa_workplaces": 380540,
+     "name": "Multnomah",
+     "outside_home_county": 138294,
+     "pct_outside_home_county": 36.3
+    },
+    "41065": {
+     "in_home_county": 5627,
+     "in_home_state": 10913,
+     "in_other_state": 965,
+     "jobs_at_or_wa_workplaces": 11878,
+     "name": "Wasco",
+     "outside_home_county": 6251,
+     "pct_outside_home_county": 52.6
+    },
+    "53011": {
+     "in_home_county": 120969,
+     "in_home_state": 164549,
+     "in_other_state": 67661,
+     "jobs_at_or_wa_workplaces": 232210,
+     "name": "Clark",
+     "outside_home_county": 111241,
+     "pct_outside_home_county": 47.9
+    },
+    "53039": {
+     "in_home_county": 3454,
+     "in_home_state": 5757,
+     "in_other_state": 2885,
+     "jobs_at_or_wa_workplaces": 8642,
+     "name": "Klickitat",
+     "outside_home_county": 5188,
+     "pct_outside_home_county": 60.0
+    },
+    "53059": {
+     "in_home_county": 1106,
+     "in_home_state": 3821,
+     "in_other_state": 1877,
+     "jobs_at_or_wa_workplaces": 5698,
+     "name": "Skamania",
+     "outside_home_county": 4592,
+     "pct_outside_home_county": 80.6
+    }
+   },
+   "workplace": {
+    "41027": {
+     "aux": 2184,
+     "held_by_other_five_county_residents": 3416,
+     "held_by_residents_elsewhere": 2565,
+     "held_by_same_county_residents": 7354,
+     "jobs": 13335,
+     "main": 11151,
+     "name": "Hood River"
+    },
+    "41051": {
+     "aux": 58903,
+     "held_by_other_five_county_residents": 48150,
+     "held_by_residents_elsewhere": 222472,
+     "held_by_same_county_residents": 242246,
+     "jobs": 512868,
+     "main": 453965,
+     "name": "Multnomah"
+    },
+    "41065": {
+     "aux": 1257,
+     "held_by_other_five_county_residents": 1781,
+     "held_by_residents_elsewhere": 2516,
+     "held_by_same_county_residents": 5627,
+     "jobs": 9924,
+     "main": 8667,
+     "name": "Wasco"
+    },
+    "53011": {
+     "aux": 21476,
+     "held_by_other_five_county_residents": 12532,
+     "held_by_residents_elsewhere": 42691,
+     "held_by_same_county_residents": 120969,
+     "jobs": 176192,
+     "main": 154716,
+     "name": "Clark"
+    },
+    "53039": {
+     "aux": 1434,
+     "held_by_other_five_county_residents": 1685,
+     "held_by_residents_elsewhere": 1833,
+     "held_by_same_county_residents": 3454,
+     "jobs": 6972,
+     "main": 5538,
+     "name": "Klickitat"
+    },
+    "53059": {
+     "aux": 331,
+     "held_by_other_five_county_residents": 634,
+     "held_by_residents_elsewhere": 270,
+     "held_by_same_county_residents": 1106,
+     "jobs": 2010,
+     "main": 1679,
+     "name": "Skamania"
+    }
+   }
+  }
+ }
+}

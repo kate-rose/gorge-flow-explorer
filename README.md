@@ -15,13 +15,11 @@ All figures come from the U.S. Census Bureau's **LEHD Origin-Destination Employm
 Specifically, this tool uses:
 - **OD main files** — jobs where both workplace and residence are within the same state
 - **OD aux files** — jobs where workplace and residence are in different states
-- **Geographic crosswalk files** — linking Census block IDs to county FIPS codes
 - **Job type: JT00** (All Jobs)
 
 Raw files were downloaded directly from:
 ```
 https://lehd.ces.census.gov/data/lodes/LODES8/{state}/od/
-https://lehd.ces.census.gov/data/lodes/LODES8/{state}/{state}_xwalk.csv.gz
 ```
 
 ## Why these three years
@@ -48,7 +46,9 @@ Researchers interested in the Clark-Multnomah corridor specifically should treat
 
 **Undercounted workers.** Self-employed workers, most agricultural workers, and gig economy workers are not well represented in unemployment insurance records. In rural counties like Hood River and Wasco, where agriculture is a significant employer, this is a non-trivial gap. Treat absolute job counts as conservative floor estimates rather than complete tallies.
 
-**Cross-state flows between Gorge counties.** Direct flows between Oregon Gorge counties (Hood River, Wasco) and Washington Gorge counties (Klickitat, Skamania) show as zero in this dataset. This reflects LODES disclosure avoidance thresholds applied to small cross-state flows — not an absence of cross-river commuting. The aux files capture out-of-state workers but require the home state to report them; small flows are suppressed. Anyone needing precise cross-river flow data should consider supplementing with ACS journey-to-work tables or state DOT commute surveys.
+**Cross-state flows.** A flow between an Oregon county and a Washington county comes from the LODES aux file of the state where the job is. An aux file holds the jobs at that state's workplaces whose holder lives in another state. The main file holds only same-state pairs. This tool reads both. Nothing is withheld for being cross-state.
+
+**Correction.** The first version of this tool (May 2026) showed every flow between an Oregon Gorge county and a Washington Gorge county as zero and said a federal disclosure threshold was the reason. That was wrong. The cause was in the merge. County names were joined from each state's own crosswalk, so an out-of-state home block got no county name and dropped out of the county totals. The scripts now take the county from the first five digits of each block geocode. In a full recheck against the raw files, 74 of the tool's 90 figures changed. `data/audit_may2026_page.csv` lists every one.
 
 **Geography is current, not historical.** The LODES8 crosswalk uses 2020 Census block boundaries. County boundaries in this region have not changed, so this does not affect the analysis, but researchers combining this data with older shapefiles should verify alignment.
 
@@ -56,17 +56,13 @@ Researchers interested in the Clark-Multnomah corridor specifically should treat
 
 ## How to replicate
 
-The analysis was built in Python using pandas. The full download and merge script is available in this repository as `gorge_flow_explorer.html` — a self-contained HTML file requiring no server or dependencies to run locally.
+Three scripts in `scripts/` rebuild every number in the tool. They use only the Python standard library.
 
-To replicate the underlying data pipeline:
+1. `python3 scripts/recompute_flows.py --raw-dir data/raw --download` fetches the OD main and aux files for Oregon and Washington (JT00; 2012, 2019, 2022) and writes `data/flows_recomputed.json`.
+2. `python3 scripts/compare_to_page.py` checks every cell of the page's FLOWS table against that file and writes `data/comparison.csv`. The saved check of the May 2026 page is `data/audit_may2026_page.csv`.
+3. `python3 scripts/framing_check.py` writes county job totals and flow rankings to `data/framing_check.md`.
 
-1. Download OD main and aux files for Oregon and Washington from the LODES8 directory above
-2. Download the geographic crosswalk for each state
-3. Merge OD files to crosswalk on `w_geocode` (workplace Census block) and `h_geocode` (home Census block) to attach county FIPS codes
-4. Filter to county pairs of interest
-5. Group by `h_cty` / `w_cty` and sum `S000` (total jobs) for each year
-
-**Note:** The crosswalk column for county FIPS in LODES8 is `cty` — not `stcofips` as documented in some older LODES versions. This discrepancy will cause a silent merge failure if you are working from older documentation.
+County is the first five digits of `w_geocode` (workplace block) and `h_geocode` (home block). No crosswalk is needed.
 
 ## County FIPS reference
 

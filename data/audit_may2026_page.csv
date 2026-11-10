@@ -1,0 +1,91 @@
+home_fips,home,work_fips,work,pair_type,page_label,year,page_value,recomputed_jobs,from_main,from_aux,difference,match
+41065,Wasco,41027,Hood River,same-state,CONFIRMED,2012,1080,1080,1080,0,0,yes
+41065,Wasco,41027,Hood River,same-state,CONFIRMED,2019,1422,1422,1422,0,0,yes
+41065,Wasco,41027,Hood River,same-state,CONFIRMED,2022,1430,1430,1430,0,0,yes
+41065,Wasco,53039,Klickitat,cross-state,"zero, 'below threshold'",2012,0,294,0,294,294,no
+41065,Wasco,53039,Klickitat,cross-state,"zero, 'below threshold'",2019,0,429,0,429,429,no
+41065,Wasco,53039,Klickitat,cross-state,"zero, 'below threshold'",2022,0,413,0,413,413,no
+41065,Wasco,53059,Skamania,cross-state,"zero, 'below threshold'",2012,0,23,0,23,23,no
+41065,Wasco,53059,Skamania,cross-state,"zero, 'below threshold'",2019,0,10,0,10,10,no
+41065,Wasco,53059,Skamania,cross-state,"zero, 'below threshold'",2022,0,36,0,36,36,no
+41065,Wasco,53011,Clark,cross-state,no label,2012,28,64,0,64,36,no
+41065,Wasco,53011,Clark,cross-state,no label,2019,34,69,0,69,35,no
+41065,Wasco,53011,Clark,cross-state,no label,2022,40,80,0,80,40,no
+41065,Wasco,41051,Multnomah,same-state,CONFIRMED,2012,880,1109,1109,0,229,no
+41065,Wasco,41051,Multnomah,same-state,CONFIRMED,2019,960,966,966,0,6,no
+41065,Wasco,41051,Multnomah,same-state,CONFIRMED,2022,1037,1037,1037,0,0,yes
+41027,Hood River,41065,Wasco,same-state,CONFIRMED,2012,737,737,737,0,0,yes
+41027,Hood River,41065,Wasco,same-state,CONFIRMED,2019,734,734,734,0,0,yes
+41027,Hood River,41065,Wasco,same-state,CONFIRMED,2022,758,758,758,0,0,yes
+41027,Hood River,53039,Klickitat,cross-state,"zero, 'below threshold'",2012,0,388,0,388,388,no
+41027,Hood River,53039,Klickitat,cross-state,"zero, 'below threshold'",2019,0,570,0,570,570,no
+41027,Hood River,53039,Klickitat,cross-state,"zero, 'below threshold'",2022,0,428,0,428,428,no
+41027,Hood River,53059,Skamania,cross-state,"zero, 'below threshold'",2012,0,73,0,73,73,no
+41027,Hood River,53059,Skamania,cross-state,"zero, 'below threshold'",2019,0,83,0,83,83,no
+41027,Hood River,53059,Skamania,cross-state,"zero, 'below threshold'",2022,0,81,0,81,81,no
+41027,Hood River,53011,Clark,cross-state,no label,2012,30,55,0,55,25,no
+41027,Hood River,53011,Clark,cross-state,no label,2019,38,56,0,56,18,no
+41027,Hood River,53011,Clark,cross-state,no label,2022,44,73,0,73,29,no
+41027,Hood River,41051,Multnomah,same-state,CONFIRMED,2012,780,764,764,0,-16,no
+41027,Hood River,41051,Multnomah,same-state,CONFIRMED,2019,870,768,768,0,-102,no
+41027,Hood River,41051,Multnomah,same-state,CONFIRMED,2022,929,929,929,0,0,yes
+53039,Klickitat,41027,Hood River,cross-state,"zero, 'below threshold'",2012,0,719,0,719,719,no
+53039,Klickitat,41027,Hood River,cross-state,"zero, 'below threshold'",2019,0,769,0,769,769,no
+53039,Klickitat,41027,Hood River,cross-state,"zero, 'below threshold'",2022,0,753,0,753,753,no
+53039,Klickitat,41065,Wasco,cross-state,"zero, 'below threshold'",2012,0,478,0,478,478,no
+53039,Klickitat,41065,Wasco,cross-state,"zero, 'below threshold'",2019,0,553,0,553,553,no
+53039,Klickitat,41065,Wasco,cross-state,"zero, 'below threshold'",2022,0,507,0,507,507,no
+53039,Klickitat,53059,Skamania,same-state,from summary,2012,90,352,352,0,262,no
+53039,Klickitat,53059,Skamania,same-state,from summary,2019,95,97,97,0,2,no
+53039,Klickitat,53059,Skamania,same-state,from summary,2022,101,101,101,0,0,yes
+53039,Klickitat,53011,Clark,same-state,CONFIRMED,2012,310,694,694,0,384,no
+53039,Klickitat,53011,Clark,same-state,CONFIRMED,2019,340,232,232,0,-108,no
+53039,Klickitat,53011,Clark,same-state,CONFIRMED,2022,365,365,365,0,0,yes
+53039,Klickitat,41051,Multnomah,cross-state,from summary,2012,163,514,0,514,351,no
+53039,Klickitat,41051,Multnomah,cross-state,from summary,2019,185,406,0,406,221,no
+53039,Klickitat,41051,Multnomah,cross-state,from summary,2022,163,588,0,588,425,no
+53059,Skamania,41027,Hood River,cross-state,"zero, 'below threshold'",2012,0,321,0,321,321,no
+53059,Skamania,41027,Hood River,cross-state,"zero, 'below threshold'",2019,0,383,0,383,383,no
+53059,Skamania,41027,Hood River,cross-state,"zero, 'below threshold'",2022,0,343,0,343,343,no
+53059,Skamania,41065,Wasco,cross-state,"zero, 'below threshold'",2012,0,86,0,86,86,no
+53059,Skamania,41065,Wasco,cross-state,"zero, 'below threshold'",2019,0,60,0,60,60,no
+53059,Skamania,41065,Wasco,cross-state,"zero, 'below threshold'",2022,0,60,0,60,60,no
+53059,Skamania,53039,Klickitat,same-state,CONFIRMED,2012,332,424,424,0,92,no
+53059,Skamania,53039,Klickitat,same-state,CONFIRMED,2019,289,386,386,0,97,no
+53059,Skamania,53039,Klickitat,same-state,CONFIRMED,2022,332,332,332,0,0,yes
+53059,Skamania,53011,Clark,same-state,CONFIRMED,2012,921,1030,1030,0,109,no
+53059,Skamania,53011,Clark,same-state,CONFIRMED,2019,802,954,954,0,152,no
+53059,Skamania,53011,Clark,same-state,CONFIRMED,2022,1068,1068,1068,0,0,yes
+53059,Skamania,41051,Multnomah,cross-state,no label,2012,16,681,0,681,665,no
+53059,Skamania,41051,Multnomah,cross-state,no label,2019,20,662,0,662,642,no
+53059,Skamania,41051,Multnomah,cross-state,no label,2022,24,660,0,660,636,no
+53011,Clark,41027,Hood River,cross-state,from summary,2012,180,170,0,170,-10,no
+53011,Clark,41027,Hood River,cross-state,from summary,2019,210,229,0,229,19,no
+53011,Clark,41027,Hood River,cross-state,from summary,2022,255,245,0,245,-10,no
+53011,Clark,41065,Wasco,cross-state,from summary,2012,90,123,0,123,33,no
+53011,Clark,41065,Wasco,cross-state,from summary,2019,105,110,0,110,5,no
+53011,Clark,41065,Wasco,cross-state,from summary,2022,134,107,0,107,-27,no
+53011,Clark,53039,Klickitat,same-state,CONFIRMED,2012,310,294,294,0,-16,no
+53011,Clark,53039,Klickitat,same-state,CONFIRMED,2019,350,426,426,0,76,no
+53011,Clark,53039,Klickitat,same-state,CONFIRMED,2022,397,397,397,0,0,yes
+53011,Clark,53059,Skamania,same-state,CONFIRMED,2012,260,273,273,0,13,no
+53011,Clark,53059,Skamania,same-state,CONFIRMED,2019,290,298,298,0,8,no
+53011,Clark,53059,Skamania,same-state,CONFIRMED,2022,328,328,328,0,0,yes
+53011,Clark,41051,Multnomah,cross-state,estimate,2012,8200,44052,0,44052,35852,no
+53011,Clark,41051,Multnomah,cross-state,estimate,2019,9200,49818,0,49818,40618,no
+53011,Clark,41051,Multnomah,cross-state,estimate,2022,9500,44936,0,44936,35436,no
+41051,Multnomah,41027,Hood River,same-state,CONFIRMED,2012,520,380,380,0,-140,no
+41051,Multnomah,41027,Hood River,same-state,CONFIRMED,2019,580,758,758,0,178,no
+41051,Multnomah,41027,Hood River,same-state,CONFIRMED,2022,645,645,645,0,0,yes
+41051,Multnomah,41065,Wasco,same-state,CONFIRMED,2012,280,282,282,0,2,no
+41051,Multnomah,41065,Wasco,same-state,CONFIRMED,2019,310,285,285,0,-25,no
+41051,Multnomah,41065,Wasco,same-state,CONFIRMED,2022,349,349,349,0,0,yes
+41051,Multnomah,53039,Klickitat,cross-state,from summary,2012,120,103,0,103,-17,no
+41051,Multnomah,53039,Klickitat,cross-state,from summary,2019,140,90,0,90,-50,no
+41051,Multnomah,53039,Klickitat,cross-state,from summary,2022,163,115,0,115,-48,no
+41051,Multnomah,53059,Skamania,cross-state,from summary,2012,16,55,0,55,39,no
+41051,Multnomah,53059,Skamania,cross-state,from summary,2019,20,64,0,64,44,no
+41051,Multnomah,53059,Skamania,cross-state,from summary,2022,24,88,0,88,64,no
+41051,Multnomah,53011,Clark,cross-state,estimate,2012,3200,8814,0,8814,5614,no
+41051,Multnomah,53011,Clark,cross-state,estimate,2019,3800,11407,0,11407,7607,no
+41051,Multnomah,53011,Clark,cross-state,estimate,2022,3900,10946,0,10946,7046,no

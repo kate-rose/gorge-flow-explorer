@@ -1,0 +1,91 @@
+home_fips,home,work_fips,work,pair_type,page_label,year,page_value,recomputed_jobs,from_main,from_aux,difference,match
+41065,Wasco,41027,Hood River,same-state,no label,2012,1080,1080,1080,0,0,yes
+41065,Wasco,41027,Hood River,same-state,no label,2019,1422,1422,1422,0,0,yes
+41065,Wasco,41027,Hood River,same-state,no label,2022,1430,1430,1430,0,0,yes
+41065,Wasco,53039,Klickitat,cross-state,no label,2012,294,294,0,294,0,yes
+41065,Wasco,53039,Klickitat,cross-state,no label,2019,429,429,0,429,0,yes
+41065,Wasco,53039,Klickitat,cross-state,no label,2022,413,413,0,413,0,yes
+41065,Wasco,53059,Skamania,cross-state,no label,2012,23,23,0,23,0,yes
+41065,Wasco,53059,Skamania,cross-state,no label,2019,10,10,0,10,0,yes
+41065,Wasco,53059,Skamania,cross-state,no label,2022,36,36,0,36,0,yes
+41065,Wasco,53011,Clark,cross-state,no label,2012,64,64,0,64,0,yes
+41065,Wasco,53011,Clark,cross-state,no label,2019,69,69,0,69,0,yes
+41065,Wasco,53011,Clark,cross-state,no label,2022,80,80,0,80,0,yes
+41065,Wasco,41051,Multnomah,same-state,no label,2012,1109,1109,1109,0,0,yes
+41065,Wasco,41051,Multnomah,same-state,no label,2019,966,966,966,0,0,yes
+41065,Wasco,41051,Multnomah,same-state,no label,2022,1037,1037,1037,0,0,yes
+41027,Hood River,41065,Wasco,same-state,no label,2012,737,737,737,0,0,yes
+41027,Hood River,41065,Wasco,same-state,no label,2019,734,734,734,0,0,yes
+41027,Hood River,41065,Wasco,same-state,no label,2022,758,758,758,0,0,yes
+41027,Hood River,53039,Klickitat,cross-state,no label,2012,388,388,0,388,0,yes
+41027,Hood River,53039,Klickitat,cross-state,no label,2019,570,570,0,570,0,yes
+41027,Hood River,53039,Klickitat,cross-state,no label,2022,428,428,0,428,0,yes
+41027,Hood River,53059,Skamania,cross-state,no label,2012,73,73,0,73,0,yes
+41027,Hood River,53059,Skamania,cross-state,no label,2019,83,83,0,83,0,yes
+41027,Hood River,53059,Skamania,cross-state,no label,2022,81,81,0,81,0,yes
+41027,Hood River,53011,Clark,cross-state,no label,2012,55,55,0,55,0,yes
+41027,Hood River,53011,Clark,cross-state,no label,2019,56,56,0,56,0,yes
+41027,Hood River,53011,Clark,cross-state,no label,2022,73,73,0,73,0,yes
+41027,Hood River,41051,Multnomah,same-state,no label,2012,764,764,764,0,0,yes
+41027,Hood River,41051,Multnomah,same-state,no label,2019,768,768,768,0,0,yes
+41027,Hood River,41051,Multnomah,same-state,no label,2022,929,929,929,0,0,yes
+53039,Klickitat,41027,Hood River,cross-state,no label,2012,719,719,0,719,0,yes
+53039,Klickitat,41027,Hood River,cross-state,no label,2019,769,769,0,769,0,yes
+53039,Klickitat,41027,Hood River,cross-state,no label,2022,753,753,0,753,0,yes
+53039,Klickitat,41065,Wasco,cross-state,no label,2012,478,478,0,478,0,yes
+53039,Klickitat,41065,Wasco,cross-state,no label,2019,553,553,0,553,0,yes
+53039,Klickitat,41065,Wasco,cross-state,no label,2022,507,507,0,507,0,yes
+53039,Klickitat,53059,Skamania,same-state,no label,2012,352,352,352,0,0,yes
+53039,Klickitat,53059,Skamania,same-state,no label,2019,97,97,97,0,0,yes
+53039,Klickitat,53059,Skamania,same-state,no label,2022,101,101,101,0,0,yes
+53039,Klickitat,53011,Clark,same-state,no label,2012,694,694,694,0,0,yes
+53039,Klickitat,53011,Clark,same-state,no label,2019,232,232,232,0,0,yes
+53039,Klickitat,53011,Clark,same-state,no label,2022,365,365,365,0,0,yes
+53039,Klickitat,41051,Multnomah,cross-state,no label,2012,514,514,0,514,0,yes
+53039,Klickitat,41051,Multnomah,cross-state,no label,2019,406,406,0,406,0,yes
+53039,Klickitat,41051,Multnomah,cross-state,no label,2022,588,588,0,588,0,yes
+53059,Skamania,41027,Hood River,cross-state,no label,2012,321,321,0,321,0,yes
+53059,Skamania,41027,Hood River,cross-state,no label,2019,383,383,0,383,0,yes
+53059,Skamania,41027,Hood River,cross-state,no label,2022,343,343,0,343,0,yes
+53059,Skamania,41065,Wasco,cross-state,no label,2012,86,86,0,86,0,yes
+53059,Skamania,41065,Wasco,cross-state,no label,2019,60,60,0,60,0,yes
+53059,Skamania,41065,Wasco,cross-state,no label,2022,60,60,0,60,0,yes
+53059,Skamania,53039,Klickitat,same-state,no label,2012,424,424,424,0,0,yes
+53059,Skamania,53039,Klickitat,same-state,no label,2019,386,386,386,0,0,yes
+53059,Skamania,53039,Klickitat,same-state,no label,2022,332,332,332,0,0,yes
+53059,Skamania,53011,Clark,same-state,no label,2012,1030,1030,1030,0,0,yes
+53059,Skamania,53011,Clark,same-state,no label,2019,954,954,954,0,0,yes
+53059,Skamania,53011,Clark,same-state,no label,2022,1068,1068,1068,0,0,yes
+53059,Skamania,41051,Multnomah,cross-state,no label,2012,681,681,0,681,0,yes
+53059,Skamania,41051,Multnomah,cross-state,no label,2019,662,662,0,662,0,yes
+53059,Skamania,41051,Multnomah,cross-state,no label,2022,660,660,0,660,0,yes
+53011,Clark,41027,Hood River,cross-state,no label,2012,170,170,0,170,0,yes
+53011,Clark,41027,Hood River,cross-state,no label,2019,229,229,0,229,0,yes
+53011,Clark,41027,Hood River,cross-state,no label,2022,245,245,0,245,0,yes
+53011,Clark,41065,Wasco,cross-state,no label,2012,123,123,0,123,0,yes
+53011,Clark,41065,Wasco,cross-state,no label,2019,110,110,0,110,0,yes
+53011,Clark,41065,Wasco,cross-state,no label,2022,107,107,0,107,0,yes
+53011,Clark,53039,Klickitat,same-state,no label,2012,294,294,294,0,0,yes
+53011,Clark,53039,Klickitat,same-state,no label,2019,426,426,426,0,0,yes
+53011,Clark,53039,Klickitat,same-state,no label,2022,397,397,397,0,0,yes
+53011,Clark,53059,Skamania,same-state,no label,2012,273,273,273,0,0,yes
+53011,Clark,53059,Skamania,same-state,no label,2019,298,298,298,0,0,yes
+53011,Clark,53059,Skamania,same-state,no label,2022,328,328,328,0,0,yes
+53011,Clark,41051,Multnomah,cross-state,no label,2012,44052,44052,0,44052,0,yes
+53011,Clark,41051,Multnomah,cross-state,no label,2019,49818,49818,0,49818,0,yes
+53011,Clark,41051,Multnomah,cross-state,no label,2022,44936,44936,0,44936,0,yes
+41051,Multnomah,41027,Hood River,same-state,no label,2012,380,380,380,0,0,yes
+41051,Multnomah,41027,Hood River,same-state,no label,2019,758,758,758,0,0,yes
+41051,Multnomah,41027,Hood River,same-state,no label,2022,645,645,645,0,0,yes
+41051,Multnomah,41065,Wasco,same-state,no label,2012,282,282,282,0,0,yes
+41051,Multnomah,41065,Wasco,same-state,no label,2019,285,285,285,0,0,yes
+41051,Multnomah,41065,Wasco,same-state,no label,2022,349,349,349,0,0,yes
+41051,Multnomah,53039,Klickitat,cross-state,no label,2012,103,103,0,103,0,yes
+41051,Multnomah,53039,Klickitat,cross-state,no label,2019,90,90,0,90,0,yes
+41051,Multnomah,53039,Klickitat,cross-state,no label,2022,115,115,0,115,0,yes
+41051,Multnomah,53059,Skamania,cross-state,no label,2012,55,55,0,55,0,yes
+41051,Multnomah,53059,Skamania,cross-state,no label,2019,64,64,0,64,0,yes
+41051,Multnomah,53059,Skamania,cross-state,no label,2022,88,88,0,88,0,yes
+41051,Multnomah,53011,Clark,cross-state,no label,2012,8814,8814,0,8814,0,yes
+41051,Multnomah,53011,Clark,cross-state,no label,2019,11407,11407,0,11407,0,yes
+41051,Multnomah,53011,Clark,cross-state,no label,2022,10946,10946,0,10946,0,yes
